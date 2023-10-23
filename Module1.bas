@@ -6,12 +6,12 @@ Attribute autosim.VB_ProcData.VB_Invoke_Func = " \n14"
 '
 
 '
-Dim fId As Integer '若是巨量資料請設Long
+Dim bId As Integer '若是巨量資料請設Long
 Dim bCnt As Integer
 bCnt = CInt(InputBox("請輸入目前內科廠區工作簿數量"))
 For fId = 1 To bCnt
 
-Workbooks.Open Filename:=ThisWorkbook.Path & "\內科" & fId & "廠.xlsx"
+Workbooks.Open Filename:=ThisWorkbook.Path & "\內科" & bId & "廠.xlsx"
 
 ActiveWorkbook.Sheets(1).Activate '第一張表啟動
 'MsgBox ("此廠區資料共" & ActiveSheet.UsedRange.Rows.Count & "筆")
